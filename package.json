@@ -1,0 +1,23 @@
+{
+  "name": "sky-fonts",
+  "version": "0.0.0",
+  "description": "Minor service for quick external font-implementation",
+  "main": "dist/skyfonts.min.js",
+  "scripts": {
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js",
+    "dist": "yarn install && yarn run build",
+    "update": "rimraf ./node_modules && yarn run dist"
+  },
+  "build": "plugin",
+  "author": "Skybrud.dk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skybrud/sky-fonts.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "np": "*",
+    "sky-build-setup": "https://github.com/skybrud/sky-build-setup.git#^1.0.0"
+  }
+}
