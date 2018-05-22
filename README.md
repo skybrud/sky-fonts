@@ -12,11 +12,15 @@ serviceId: only needed if the service require a id like typekit or fonts.com
 ### Example code
 Typekit:
 ```js
+import SkyFonts from 'sky-fonts';
+
 SkyFonts('typekit', '{insert kit id here}');
 ```
 
 fonts.com:
 ```js
+import SkyFonts from 'sky-fonts';
+
 SkyFonts('fonts.com', '{insert MTIProjectId here}');
 ```
 
